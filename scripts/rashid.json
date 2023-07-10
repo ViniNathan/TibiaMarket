@@ -21,24 +21,12 @@
         "valor": "40000"
       },
       {
-        "nome": "Dwarven Armor",
-        "valor": "30000"
-      },
-      {
-        "nome": "Flower Dress",
-        "valor": "1000"
-      },
-      {
         "nome": "Glacier Robe",
         "valor": "11000"
       },
       {
         "nome": "Golden Armor",
         "valor": "20000"
-      },
-      {
-        "nome": "Goo Shell",
-        "valor": "4000"
       },
       {
         "nome": "Hibiscus Dress",
@@ -177,10 +165,6 @@
         "valor": "1000"
       },
       {
-        "nome": "Ragnir Helmet",
-        "valor": "400"
-      },
-      {
         "nome": "Skull Helmet",
         "valor": "40000"
       },
@@ -227,10 +211,6 @@
       {
         "nome": "Gold Ring",
         "valor": "8000"
-      },
-      {
-        "nome": "Horn (Ring)",
-        "valor": "300"
       },
       {
         "nome": "Leviathan's Amulet",
@@ -537,10 +517,6 @@
         "valor": "23000"
       },
       {
-        "nome": "Relic Sword",
-        "valor": "25000"
-      },
-      {
         "nome": "Rift Bow",
         "valor": "45000"
       },
@@ -583,10 +559,6 @@
       {
         "nome": "Vile Axe",
         "valor": "30000"
-      },
-      {
-        "nome": "War Axe",
-        "valor": "12000"
       },
       {
         "nome": "Wyvern Fang",
