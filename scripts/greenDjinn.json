@@ -1,0 +1,200 @@
+{
+    "itens": [
+        {
+            "nome": "Ankh",
+            "valor": 100
+        },
+        {
+            "nome": "Dragon Necklace",
+            "valor": 100
+        },
+        {
+            "nome": "Dwarven Ring",
+            "valor": 100
+        },
+        {
+            "nome": "Energy Ring",
+            "valor": 100
+        },
+        {
+            "nome": "Glacial Rod",
+            "valor": 6500
+        },
+        {
+            "nome": "Hailstorm Rod",
+            "valor": 3000
+        },
+        {
+            "nome": "Life Ring",
+            "valor": 50
+        },
+        {
+            "nome": "Might Ring",
+            "valor": 250
+        },
+        {
+            "nome": "Moonlight Rod",
+            "valor": 200
+        },
+        {
+            "nome": "Muck Rod",
+            "valor": 6000
+        },
+        {
+            "nome": "Mysterious Fetish",
+            "valor": 50
+        },
+        {
+            "nome": "Necrotic Rod",
+            "valor": 1000
+        },
+        {
+            "nome": "Northwind Rod",
+            "valor": 1500
+        },
+        {
+            "nome": "Protection Amulet",
+            "valor": 100
+        },
+        {
+            "nome": "Ring of Healing",
+            "valor": 100
+        },
+        {
+            "nome": "Silver Amulet",
+            "valor": 50
+        },
+        {
+            "nome": "Snakebite Rod",
+            "valor": 100
+        },
+        {
+            "nome": "Springsprout Rod",
+            "valor": 3600
+        },
+        {
+            "nome": "Strange Talisman",
+            "valor": 30
+        },
+        {
+            "nome": "Terra Rod",
+            "valor": 2000
+        },
+        {
+            "nome": "Time Ring",
+            "valor": 100
+        },
+        {
+            "nome": "Underworld Rod",
+            "valor": 4400
+        },
+        {
+            "nome": "Ancient Shield",
+            "valor": 900
+        },
+        {
+            "nome": "Black Shield",
+            "valor": 800
+        },
+        {
+            "nome": "Bonebreaker",
+            "valor": 10000
+        },
+        {
+            "nome": "Dark Armor",
+            "valor": 400
+        },
+        {
+            "nome": "Dark Helmet",
+            "valor": 250
+        },
+        {
+            "nome": "Dragon Hammer",
+            "valor": 2000
+        },
+        {
+            "nome": "Dreaded Cleaver",
+            "valor": 15000
+        },
+        {
+            "nome": "Earth Knight Axe",
+            "valor": 2000
+        },
+        {
+            "nome": "Energy Knight Axe",
+            "valor": 2000
+        },
+        {
+            "nome": "Fiery Knight Axe",
+            "valor": 2000
+        },
+        {
+            "nome": "Giant Sword",
+            "valor": 17000
+        },
+        {
+            "nome": "Haunted Blade",
+            "valor": 8000
+        },
+        {
+            "nome": "Icy Knight Axe",
+            "valor": 2000
+        },
+        {
+            "nome": "Knight Armor",
+            "valor": 5000
+        },
+        {
+            "nome": "Knight Legs",
+            "valor": 5000
+        },
+        {
+            "nome": "Mystic Turban",
+            "valor": 150
+        },
+        {
+            "nome": "Onyx Flail",
+            "valor": 22000
+        },
+        {
+            "nome": "Ornamented Axe",
+            "valor": 20000
+        },
+        {
+            "nome": "Poison Dagger",
+            "valor": 50
+        },
+        {
+            "nome": "Scimitar",
+            "valor": 150
+        },
+        {
+            "nome": "Serpent Sword",
+            "valor": 900
+        },
+        {
+            "nome": "Skull Staff",
+            "valor": 6000
+        },
+        {
+            "nome": "Strange Helmet",
+            "valor": 500
+        },
+        {
+            "nome": "Titan Axe",
+            "valor": 4000
+        },
+        {
+            "nome": "Tower Shield",
+            "valor": 8000
+        },
+        {
+            "nome": "Vampire Shield",
+            "valor": 15000
+        },
+        {
+            "nome": "Warrior Helmet",
+            "valor": 5000
+        }
+    ]
+}
