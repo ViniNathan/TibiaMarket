@@ -1,4 +1,5 @@
 import pyautogui
+from time import sleep
 
 class Actions:
     def __init__(self):
@@ -11,6 +12,15 @@ class Actions:
     def move_and_right_click(self, image_location):
         pyautogui.moveTo(image_location)
         pyautogui.leftClick()
+
+    def move_and_right_click_delay(self, image_location):
+        pyautogui.moveTo(image_location)
+        sleep(1)
+        pyautogui.leftClick()
+
+    def double_click(self, image_location):
+        pyautogui.moveTo(image_location)
+        pyautogui.doubleClick()
 
     def drag_and_move(self, origem, destino):
         # Obtém as coordenadas iniciais do cursor
@@ -25,3 +35,4 @@ class Actions:
 
         # Solta o botão esquerdo do mouse
         pyautogui.mouseUp(button='left')
+    
