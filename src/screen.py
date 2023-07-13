@@ -81,6 +81,50 @@ class WindowCapture:
         screenshot = self.capture()
         mouse_region = screenshot[capture_y1:capture_y2, capture_x1:capture_x2]
         return mouse_region
+    
+    def capture_mouse_region3(self):
+        # Define o tamanho da região ao redor do mouse
+        region_size = 7
+
+        # Obtém a posição atual do mouse
+        mouse_x, mouse_y = pyautogui.position()
+
+        # Obtém as coordenadas da janela capturada
+        hwnd = win32gui.FindWindow(None, self.window_name)
+        left, top, _, _ = win32gui.GetClientRect(hwnd)
+
+        # Calcula as coordenadas da região ao redor do mouse na janela capturada
+        capture_x1 = mouse_x - region_size - left
+        capture_x2 = mouse_x + region_size - left
+        capture_y1 = mouse_y - region_size - top
+        capture_y2 = mouse_y + region_size - top
+
+        # Captura a região onde o mouse está posicionado
+        screenshot = self.capture()
+        mouse_region = screenshot[capture_y1:capture_y2, capture_x1:capture_x2]
+        return mouse_region
+
+    def capture_mouse_region4(self):
+        # Define o tamanho da região ao redor do mouse
+        region_size = 20
+
+        # Obtém a posição atual do mouse
+        mouse_x, mouse_y = pyautogui.position()
+
+        # Obtém as coordenadas da janela capturada
+        hwnd = win32gui.FindWindow(None, self.window_name)
+        left, top, _, _ = win32gui.GetClientRect(hwnd)
+
+        # Calcula as coordenadas da região ao redor do mouse na janela capturada
+        capture_x1 = mouse_x - region_size - left
+        capture_x2 = mouse_x + region_size - left
+        capture_y1 = mouse_y - region_size - top
+        capture_y2 = mouse_y + region_size - top
+
+        # Captura a região onde o mouse está posicionado
+        screenshot = self.capture()
+        mouse_region = screenshot[capture_y1:capture_y2, capture_x1:capture_x2]
+        return mouse_region
 
 # Localiza as coordenadas do centro de uma imagem compativel com um "template" salvo
 class TemplateMatcher:

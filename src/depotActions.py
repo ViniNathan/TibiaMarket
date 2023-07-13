@@ -10,7 +10,7 @@ class DPactions():
     def __init__(self):
         self.WindowName = "Projetor em tela cheia (prévia)"
         self.actions = Actions()
-
+        
     def depotTileFinder(self):
         # Encontra um depot vazio (sem player)
         depotTilePath = "images/depotImages/depotTile.png"
@@ -70,7 +70,7 @@ class DPactions():
             print("O market foi encontrado na posição:", marketLocation)
             pyautogui.moveTo(marketLocation)
             sleep(0.5)
-            pyautogui.rightClick()  
+            pyautogui.rightClick()
 
     def start_keyboard(self):
         with Listener(on_press=self.target_key) as listener:
@@ -87,8 +87,4 @@ class DPactions():
         dp. depotTileFinder()
         dp.depositFinder()
         dp.marketFinder()
-
-        
-# dp = DPactions()
-# dp.start_keyboard()
 

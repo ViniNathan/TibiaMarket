@@ -9,21 +9,12 @@ from pynput.keyboard import Listener
 from pynput import keyboard
 
 class actionsMarket():
-    def __init__(self):
+    def __init__(self, npc):
         self.WindowName = "Projetor em tela cheia (prévia)"
         self.screen = WindowCapture(self.WindowName)
         self.itemPrice = 0
-        self.npc = ""
-        self.count = 0
-
-        # Solicitar ao usuário que escolha o NPC
-        escolha_npc = input("Escolha o NPC (greenDjinn, blueDjinn ou rashid): ")
-
-        # Verificar a escolha do usuário e atribuir à variável self.npc
-        if escolha_npc == "greenDjinn" or escolha_npc == "blueDjinn" or escolha_npc == "rashid":
-            self.npc = escolha_npc
-        else:
-            print("NPC inválido!")
+        self.npc = npc
+        self.bought = []
 
         with open(f"scripts/{self.npc}.json") as file:
             self.Data = json.load(file)
@@ -40,7 +31,7 @@ class actionsMarket():
     def SearchMarket(self):
         # Digite o texto caractere por caractere
         for caractere in self.nome_item:
-            pyautogui.typewrite(caractere)
+            pyautogui.typewrite(caractere, 0.0001)
         
         # Pressione a tecla Enter para concluir a digitação
         pyautogui.press('enter')
@@ -96,6 +87,7 @@ class actionsMarket():
                 acceptButtonLocation = LocateImageCenter(acceptButonPath, self.WindowName)
                 print("O botão de compra foi encontrado na posição:", acceptButtonLocation)
                 mouse.move_and_left_click(acceptButtonLocation)
+                self.bought.append(self.nome_item)
         self.nextItem()
 
     def nextItem(self):
@@ -104,6 +96,14 @@ class actionsMarket():
         if closeSearchLocation is not None:
             print("O botão de resetar a pesquisa foi encontrado na posição:", closeSearchLocation)
             pyautogui.moveTo(closeSearchLocation)
+            pyautogui.leftClick()
+    
+    def closeMarket(self):
+        closeMarketPath = "images/depotImages/closeMarket.png"
+        closeMarketLocation = LocateImageCenter(closeMarketPath, self.WindowName)
+        if closeMarketLocation is not None:
+            print("O botão de fechar o market foi encontrado na posição:", closeMarketLocation)
+            pyautogui.moveTo(closeMarketLocation)
             pyautogui.leftClick()
 
     def start_keyboard(self):
@@ -128,7 +128,7 @@ class actionsMarket():
             self.priceFinder()
             self.priceImageToText()
             self.priceCompare()
-            self.count += 1
+        self.closeMarket()
 
 # m = actionsMarket()
 # m.start_keyboard()

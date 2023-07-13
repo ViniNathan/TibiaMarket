@@ -35,4 +35,18 @@ class Actions:
 
         # Solta o botão esquerdo do mouse
         pyautogui.mouseUp(button='left')
+
+    def drag_and_move2(self, origem, destino):
+        # Obtém as coordenadas iniciais do cursor
+        pyautogui.moveTo(origem)
+        
+        # Pressiona o botão esquerdo do mouse
+        pyautogui.mouseDown(button='left')
+
+        # Move o cursor para uma nova posição
+        new_x, new_y = destino
+        pyautogui.moveTo(new_x, new_y, duration=0.1)  # Duração opcional para mover suavemente
+
+        # Solta o botão esquerdo do mouse
+        pyautogui.mouseUp(button='left')
     
